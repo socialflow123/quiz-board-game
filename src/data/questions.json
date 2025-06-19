@@ -1,0 +1,107 @@
+
+[
+  {
+    "type": "choice",
+    "question": "그림에 나오는 기후는?",
+    "image": "/images/desert.png",
+    "choices": ["열대기후", "건조기후", "냉대기후", "한대기후"],
+    "answer": 1
+  },
+  {
+    "type": "choice",
+    "question": "그림에 나오는 기후는?",
+    "image": "/images/image02.png",
+    "choices": ["냉대기후", "열대기후", "한대기후", "건조기후"],
+    "answer": 0
+  },
+  {
+    "type": "ox",
+    "question": "적도 주변 지역은 고위도 지역에 비해 평균 기온이 높고 강수량이 많다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "세계를 온전히 이해하기 위해서는 지역의 다양성을 이해할 수 있어야 한다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "우리는 세계시민으로서 우리의 삶이 세계와 긴밀하게 연결되어 있다는 사실을 인식해야 한다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "중국은 동아시아에 속하며, 수도는 베이징이다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "유프라테스강과 티그리스강의 하류 지역은 고대 문명의 발상지로 유명하다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "아시아에서 신자 수가 가장 많은 종교는 불교이다.",
+    "answer": false
+  },
+  {
+    "type": "ox",
+    "question": "힌두교는 유일신을 섬기며 서남아시아, 중앙아시아 대부분 지역에서 지배적인 종교이다.",
+    "answer": false
+  },
+  {
+    "type": "ox",
+    "question": "크리스트교 신자들은 소를 신성하게 여겨 소를 숭배하고 소고기를 먹지 않는다.",
+    "answer": false
+  },
+  {
+    "type": "ox",
+    "question": "서로 다른 종교를 존중하고 다름으로 인해 생기는 갈등을 합리적으로 해결하려는 세계시민으로서의 자세가 필요하다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "세계 인구의 절반 이상이 아시아에 거주한다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "중국이 위치한 동아시아는 최근 인구가 급증하고 있다.",
+    "answer": false
+  },
+  {
+    "type": "ox",
+    "question": "높은 출생률로 인구가 증가하는 국가는 풍부한 노동력을 필요로 하는 세계적인 기업들이 투자하기 좋은 곳이다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "인구가 급격하게 증가하는 국가에서는 대체로 출산을 적극적으로 장려하는 정책을 추진하고 있다.",
+    "answer": false
+  },
+  {
+    "type": "ox",
+    "question": "인구가 감소하는 국가는 외국인 이민을 받아들이는 것으로 인구 문제에 대응할 수 있다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "아시아는 석유, 석탄, 희토류 등 산업에 필요한 주요 천연자원의 공급지 역할을 하고 있다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "서남아시아의 산유국들은 경제의 자원 의존도를 더욱 높이기 위해 노력하고 있다.",
+    "answer": false
+  },
+  {
+    "type": "ox",
+    "question": "아시아 국가들은 게임, 영화, 음악 등의 분야에서 다양한 문화 콘텐츠를 생산하며 세계 문화 산업의 새로운 변화를 이끌어 가고 있다.",
+    "answer": true
+  },
+  {
+    "type": "ox",
+    "question": "우리나라의 대표적인 수출품인 스마트폰은 대부분 국내에서 생산되고 있다.",
+    "answer": false
+  }
+]
