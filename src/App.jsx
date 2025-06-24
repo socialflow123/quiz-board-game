@@ -7,6 +7,7 @@ function App() {
   const [startTime, setStartTime] = useState(Date.now());
   const [endTime, setEndTime] = useState(null);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
+  const [isStarted, setIsStarted] = useState(false);
 
   const current = shuffledQuestions[currentIndex];
 
@@ -52,6 +53,51 @@ function App() {
     const seconds = Math.floor((duration % 60000) / 1000);
     return `${minutes}분 ${seconds}초`;
   };
+
+  if (!isStarted) {
+    return (
+      <div
+        style={{
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "40px",
+          fontSize: "20px",
+          lineHeight: "1.8",
+          backgroundColor: "#e8f4fc",
+          textAlign: "center"
+        }}
+      >
+        <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>🌍 퀴즈 보드게임</h1>
+
+        <p style={{ maxWidth: "800px", marginBottom: "40px" }}>
+          문제는 총 <strong>20문제</strong>이며, 모두 <strong>랜덤으로 출제</strong>됩니다.<br />
+          문제는 객관식 또는 OX 형식입니다.<br />
+          <strong>틀릴 경우 처음으로 돌아갑니다.</strong> 신중하게 풀어보세요!<br />
+          걸린 시간도 측정되니 빠르게 도전해보세요! ⏱
+        </p>
+
+        <button
+          onClick={() => setIsStarted(true)}
+          style={{
+            padding: "20px 60px",
+            fontSize: "24px",
+            backgroundColor: "#007bff",
+            color: "white",
+            border: "none",
+            borderRadius: "12px",
+            cursor: "pointer",
+            boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
+          }}
+        >
+          🎮 퀴즈 시작하기
+        </button>
+      </div>
+    );
+  }
+
 
   if (currentIndex >= shuffledQuestions.length) {
     return (
