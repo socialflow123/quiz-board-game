@@ -40,8 +40,11 @@ function App() {
     } else {
       setShowFeedback("틀렸습니다. 처음부터 다시 시작합니다!");
       setTimeout(() => {
-        setShowFeedback(null);
+        const reshuffled = [...questions].sort(() => Math.random() - 0.5);
+        setShuffledQuestions(reshuffled);
         setCurrentIndex(0);
+        setShowFeedback(null);
+        setStartTime(Date.now()); // 시간도 다시 측정
       }, 1500);
     }
   };
