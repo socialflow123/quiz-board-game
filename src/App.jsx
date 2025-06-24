@@ -46,6 +46,7 @@ function App() {
         setShowFeedback(null);
         setStartTime(Date.now()); // 시간도 다시 측정
       }, 1500);
+
     }
   };
 
@@ -57,59 +58,61 @@ function App() {
     return `${minutes}분 ${seconds}초`;
   };
 
-  if (!isStarted) {
-    return (
+ if (!isStarted) {
+  return (
+    <div
+      style={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#e8f4fc",
+        padding: "40px",
+      }}
+    >
       <div
         style={{
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#e8f4fc",
-          padding: "40px",
+          backgroundColor: "white",
+          borderRadius: "16px",
+          padding: "60px",
+          width: "100%",
+          maxWidth: "600px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+          textAlign: "center",
+          fontSize: "20px",
+          lineHeight: "1.8",
         }}
       >
-        <div
+        <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>🌍 퀴즈 보드게임</h1>
+
+        <p style={{ marginBottom: "40px" }}>
+          문제는 총 <strong>20문제</strong>이며, 모두 <strong>랜덤으로 출제</strong>됩니다.<br />
+          문제는 객관식 또는 OX 형식입니다.<br />
+          <strong>틀릴 경우 처음으로 돌아갑니다.</strong><br />
+          걸린 시간도 측정되니 빠르게 도전해보세요! ⏱
+        </p>
+
+        <button
+          onClick={() => setIsStarted(true)}
           style={{
-            backgroundColor: "white",
-            borderRadius: "16px",
-            padding: "60px",
-            maxWidth: "700px",
-            width: "100%",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
-            textAlign: "center",
-            fontSize: "20px",
-            lineHeight: "1.8",
+            padding: "16px 40px",
+            fontSize: "24px",
+            backgroundColor: "#007bff",
+            color: "white",
+            border: "none",
+            borderRadius: "12px",
+            cursor: "pointer",
+            boxShadow: "2px 2px 8px rgba(0,0,0,0.2)"
           }}
         >
-          <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>🌍 퀴즈 보드게임</h1>
-
-          <p style={{ marginBottom: "40px" }}>
-            문제는 총 <strong>20문제</strong>이며, 모두 <strong>랜덤으로 출제</strong>됩니다.<br />
-            문제는 객관식 또는 OX 형식입니다.<br />
-            <strong>틀릴 경우 처음으로 돌아갑니다.</strong><br />
-            걸린 시간도 측정되니 빠르게 도전해보세요! ⏱
-          </p>
-
-          <button
-            onClick={() => setIsStarted(true)}
-            style={{
-              padding: "16px 40px",
-              fontSize: "24px",
-              backgroundColor: "#007bff",
-              color: "white",
-              border: "none",
-              borderRadius: "12px",
-              cursor: "pointer",
-              boxShadow: "2px 2px 8px rgba(0,0,0,0.2)"
-            }}
-          >
-            퀴즈 시작하기
-          </button>
-        </div>
+          🎮 퀴즈 시작하기
+        </button>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
 
 
